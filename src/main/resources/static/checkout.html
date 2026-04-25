@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGCDrones - Checkout</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/checkout.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>AGCDrones</h1>
+    <p>Finaliza tu pedido de forma sencilla</p>
+
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="featured">
+      <h2>Finalizar compra</h2>
+
+      <p id="resumen-checkout">
+        Cargando resumen del carrito...
+      </p>
+
+      <p id="mensaje-api" class="mensaje-api"></p>
+
+      <form id="form-checkout">
+        <p>
+          <label for="nombre">Nombre completo</label><br>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+          <label for="email">Correo electrónico</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="direccion">Dirección de envío</label><br>
+          <input type="text" id="direccion" name="direccion" required>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono</label><br>
+          <input type="tel" id="telefono" name="telefono" required>
+        </p>
+
+        <p>
+          <button type="submit" class="button">
+            Confirmar pedido
+          </button>
+        </p>
+      </form>
+
+      <p>
+        <a class="button button-secondary" href="carrito.html">Volver al carrito</a>
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>

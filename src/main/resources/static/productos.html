@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AGCDrones - Catálogo</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/productos.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <h1>AGCDrones</h1>
@@ -15,7 +17,7 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="productos.html">Productos</a>
-      <a href="carrito.html">Carrito</a>
+      <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
       <a href="checkout.html">Checkout</a>
     </nav>
   </header>
@@ -28,28 +30,42 @@
         están pensados para ofrecer estabilidad, autonomía y una experiencia intuitiva.
       </p>
 
+      <p id="mensaje-api" class="mensaje-api"></p>
+
       <article class="card">
-        <img src="img/MAVIC-4-PRO.jpg" alt="Drone SkyMini X1">
+        <img src="img/MAVIC-4-PRO.jpg" alt="DJI Mavic 4 Pro">
         <h3>DJI Mavic 4 Pro</h3>
-        <p>Dron profesional, fácil de transportar, con calidad 6k de grabación</p>
+        <p>Dron profesional, fácil de transportar, con calidad 6K de grabación</p>
         <p><strong>Precio:</strong> 2.099 €</p>
-        <p><a class="button" href="carrito.html">Añadir al carrito</a></p>
+        <p>
+          <button type="button" class="button" data-add-carrito="1">
+            Añadir al carrito
+          </button>
+        </p>
       </article>
 
       <article class="card">
-        <img src="img/XAG-P100-PRO-MAIN-REVOCAST3-1.jpg" alt="Drone Falcon Pro 4K">
+        <img src="img/XAG-P100-PRO-MAIN-REVOCAST3-1.jpg" alt="XAG P100 Pro">
         <h3>XAG P100 Pro</h3>
         <p>Dron robusto, pensado para el campo y agricultores con grandes extensiones</p>
         <p><strong>Precio:</strong> 25.800 €</p>
-        <p><a class="button" href="carrito.html">Añadir al carrito</a></p>
+        <p>
+          <button type="button" class="button" data-add-carrito="2">
+            Añadir al carrito
+          </button>
+        </p>
       </article>
 
       <article class="card">
-        <img src="img/nazgul-evoque-f5-v3-o4-gps-preorder-5123941.jpg" alt="Drone Racer Jet R2">
+        <img src="img/nazgul-evoque-f5-v3-o4-gps-preorder-5123941.jpg" alt="iFlight Nazgul Evoque F5 V3">
         <h3>iFlight Nazgul Evoque F5 V3</h3>
         <p>Modelo para comenzar con el mundo FPV, fácil de manejar y resistente</p>
         <p><strong>Precio:</strong> 780 €</p>
-        <p><a class="button" href="carrito.html">Añadir al carrito</a></p>
+        <p>
+          <button type="button" class="button" data-add-carrito="3">
+            Añadir al carrito
+          </button>
+        </p>
       </article>
     </section>
 
@@ -91,5 +107,6 @@
       </table>
     </section>
   </main>
+
 </body>
 </html>
